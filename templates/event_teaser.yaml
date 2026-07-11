@@ -1,0 +1,23 @@
+name: "event_teaser"
+description: "Event teaser: build anticipation, reveal details, drive signups."
+scenes:
+  - role: "intro"
+    heading: "Something's coming\u2026"
+    body: "{company_name}"
+    background: "secondary"
+    duration_weight: 3
+  - role: "message"
+    heading: "{message}"
+    body: "{goal}"
+    background: "primary"
+    duration_weight: 3
+  - role: "cta"
+    heading: "{cta}"
+    body: "{website}"
+    background: "accent"
+    duration_weight: 3
+  - role: "outro"
+    heading: "{company_name}"
+    body: "{disclaimer}"
+    background: "background"
+    duration_weight: 1
