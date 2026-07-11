@@ -75,9 +75,12 @@ def render_scene_image(
         logo = Image.open(logo_path).convert("RGBA")
         logo_width = spec.width // 10
         ratio = logo_width / logo.width
-        logo = logo.resize((logo_width, max(1, int(logo.height * ratio))))
-        margin = spec.width // 40
-        image.paste(logo, (spec.width - logo.width - margin, margin), logo)
+        logo_height = int(logo.height * ratio)
+        # Skip logos with extreme aspect ratios that would render unusably small.
+        if logo_height >= 8:
+            logo = logo.resize((logo_width, logo_height))
+            margin = spec.width // 40
+            image.paste(logo, (spec.width - logo.width - margin, margin), logo)
 
     return image
 

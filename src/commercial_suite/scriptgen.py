@@ -7,11 +7,14 @@ offline template-substitution generator so the pipeline always works.
 from __future__ import annotations
 
 import json
+import logging
 import urllib.request
 from dataclasses import asdict, dataclass
 
 from .config import Settings
 from .models import BrandKit, Campaign, Template
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -132,5 +135,6 @@ def _refine_copy_with_llm(
         if isinstance(content.get("cta"), str):
             result["cta"] = content["cta"]
         return result or None
-    except Exception:
+    except Exception as exc:
+        logger.warning("LLM copy refinement failed, using draft copy: %s", exc)
         return None
