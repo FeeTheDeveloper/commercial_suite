@@ -1,0 +1,23 @@
+name: "testimonial"
+description: "Customer testimonial: quote-forward layout with brand framing."
+scenes:
+  - role: "intro"
+    heading: "What our customers say"
+    body: "{company_name}"
+    background: "background"
+    duration_weight: 2
+  - role: "message"
+    heading: "\u201c{message}\u201d"
+    body: ""
+    background: "primary"
+    duration_weight: 5
+  - role: "cta"
+    heading: "{cta}"
+    body: "{website}"
+    background: "accent"
+    duration_weight: 2
+  - role: "outro"
+    heading: "{company_name}"
+    body: "{disclaimer}"
+    background: "secondary"
+    duration_weight: 1

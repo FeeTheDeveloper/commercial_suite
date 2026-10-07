@@ -1,0 +1,44 @@
+# Brand kit: the single source of truth about the company used by the
+# video generation pipeline. See docs/schemas.md for the full schema.
+
+company:
+  name: "FeeTheDeveloper"
+  tagline: "Building the future, one commit at a time"
+  mission: >
+    Empower businesses with polished, on-brand video content generated
+    from a single source of truth.
+  website: "https://github.com/FeeTheDeveloper"
+
+voice:
+  tone: ["confident", "friendly", "modern"]
+  guidelines:
+    - "Speak directly to the viewer using 'you'."
+    - "Keep sentences short and punchy."
+    - "Always end with a clear call to action."
+  banned_words: ["cheap", "guaranteed"]
+
+audiences:
+  - name: "small-business-owners"
+    description: "Owners of small businesses looking to scale their marketing."
+  - name: "marketing-teams"
+    description: "In-house marketing teams producing multi-platform campaigns."
+
+palette:
+  primary: "#1F6FEB"
+  secondary: "#0D1117"
+  accent: "#F78166"
+  background: "#0D1117"
+  text: "#FFFFFF"
+
+typography:
+  heading_font: "brand/assets/fonts/heading.ttf"   # optional; falls back to default font
+  body_font: "brand/assets/fonts/body.ttf"         # optional; falls back to default font
+
+assets:
+  logos_dir: "brand/assets/logos"
+  images_dir: "brand/assets/images"
+  fonts_dir: "brand/assets/fonts"
+  audio_dir: "brand/assets/audio"
+
+legal:
+  disclaimer: "© FeeTheDeveloper. All rights reserved."

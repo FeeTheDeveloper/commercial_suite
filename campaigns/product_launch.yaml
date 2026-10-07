@@ -1,0 +1,8 @@
+name: "product_launch"
+goal: "Announce the launch of the new product line"
+message: "Introducing our newest product line — built for the way you work."
+cta: "Be the first to try it. Sign up now!"
+template: "announcement"
+audience: "marketing-teams"
+platforms: ["youtube", "tiktok"]
+duration_seconds: 20

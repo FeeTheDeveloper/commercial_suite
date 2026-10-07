@@ -1,0 +1,11 @@
+# Example campaign. Add a new YAML file in this directory to define a new
+# campaign — no code changes required. See docs/schemas.md for the schema.
+
+name: "summer_sale"
+goal: "Drive traffic to the summer sale landing page"
+message: "Everything you love, now up to 40% off for summer."
+cta: "Shop the Summer Sale today!"
+template: "product_promo"
+audience: "small-business-owners"
+platforms: ["youtube", "tiktok", "instagram_feed"]
+duration_seconds: 15
